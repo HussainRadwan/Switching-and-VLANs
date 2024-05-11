@@ -218,6 +218,11 @@ As we will use the Topology in Part 1 to continue to build a Switch Virtual Inte
       Switch(config-if)#switchport trunk encapsulation dot1q 
       Switch(config-if)#switchport mode trunk
     ```
-    
-  
+
+### Conclusion
+In conclusion, both Router on a Stick and Switch Virtual Interfaces (SVIs) are techniques used for managing traffic across VLANs in a network.
+Router on a Stick is a method that involves a single physical interface on a router configured with multiple sub-interfaces, each associated with a distinct VLAN. It allows a router to route traffic between VLANs using a single physical interface connected to a switch.
+Switch Virtual Interfaces, on the other hand, are configured on multi-layer switches. SVIs enable a switch to perform routing between VLANs without the need for an external router. Each SVI acts as the default gateway for its respective VLAN, allowing devices within that VLAN to communicate with other VLANs and networks.
+Both methods serve the purpose of facilitating communication between different VLANs, thereby segmenting and organizing network traffic efficiently. The choice between using Router on a Stick and SVIs often depends on the network requirements, hardware capabilities, and scalability needs.
+
 
